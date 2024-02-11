@@ -18,7 +18,7 @@ class Registro extends JFrame{
 	public Registro() {
 		Toolkit toolkit = Toolkit.getDefaultToolkit();
 		
-		setBounds(200,200,400,500);
+		setBounds(200,200,405,500);
 		setLocationRelativeTo(null);
 		setTitle("Sign up");
 		setResizable(false);
@@ -27,23 +27,23 @@ class Registro extends JFrame{
 		setLayout(null);
 		
 		JButton button = new JButton("Aceptar");
-		button.setBounds(80, 420, 120, 30);
+		button.setBounds(75, 420, 120, 30);
 		button.setBackground(new Color(228, 232, 255));
 		add(button);
 		JButton button2 = new JButton("Cancelar");
-		button2.setBounds(200, 420, 120, 30);
+		button2.setBounds(205, 420, 120, 30);
 		button2.setBackground(new Color(255, 228, 228));
 		add(button2);
 		
 		Image newImage = image.getImage().getScaledInstance(100, 100, Image.SCALE_SMOOTH);
 		ImageIcon logo = new ImageIcon(newImage);
 		JLabel lImage = new JLabel(logo);
-		lImage.setBounds(155, 9, 100, 100);
+		lImage.setBounds(145, 9, 100, 100);
 		add(lImage);
 		
 		JLabel lNewUser = new JLabel("Nuevo Usuario");
 		lNewUser.setFont(new Font("Serif", Font.BOLD,30));
-		lNewUser.setBounds(100,75,500,100);
+		lNewUser.setBounds(100,80,500,100);
 		add(lNewUser);
 		
 		JLabel lUser = new JLabel("Usuario");
@@ -77,7 +77,7 @@ class Registro extends JFrame{
 		
 		JCheckBox cb = new JCheckBox("Acepto términos y condiciones", true);
 		cb.setFont(new Font("SansSerif", Font.ITALIC,12));
-		cb.setBounds(80, 370, 200, 40);
+		cb.setBounds(100, 370, 200, 40);
 		add(cb);
 	}
 }
