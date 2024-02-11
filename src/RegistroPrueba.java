@@ -1,7 +1,4 @@
-import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.Image;
 import java.awt.Toolkit;
@@ -20,15 +17,8 @@ class Registro extends JFrame{
 	
 	public Registro() {
 		Toolkit toolkit = Toolkit.getDefaultToolkit();
-		Dimension screenSize = toolkit.getScreenSize();
 		
-		int screenWidth = screenSize.width;
-		int screenHeight = screenSize.height;
-		
-		int posWidth =  screenWidth/4;
-		int posHeight = screenHeight/2;
-		
-		setBounds(200,200,posWidth,posHeight);
+		setBounds(200,200,400,500);
 		setLocationRelativeTo(null);
 		setTitle("Sign up");
 		setResizable(false);
@@ -36,15 +26,12 @@ class Registro extends JFrame{
 		setIconImage(image.getImage());
 		setLayout(null);
 		
-		JPanel panel = new JPanel();
-		panel.setBounds(0, screenHeight, posWidth, posHeight);
-		
 		JButton button = new JButton("Aceptar");
-		button.setBounds(posWidth/2, posHeight-posHeight/5, 120, 30);
+		button.setBounds(80, 420, 120, 30);
 		button.setBackground(new Color(228, 232, 255));
 		add(button);
 		JButton button2 = new JButton("Cancelar");
-		button2.setBounds(posWidth/6, posHeight-posHeight/5, 120, 30);
+		button2.setBounds(200, 420, 120, 30);
 		button2.setBackground(new Color(255, 228, 228));
 		add(button2);
 		
@@ -56,7 +43,7 @@ class Registro extends JFrame{
 		
 		JLabel lNewUser = new JLabel("Nuevo Usuario");
 		lNewUser.setFont(new Font("Serif", Font.BOLD,30));
-		lNewUser.setBounds((posWidth/4),75,500,100);
+		lNewUser.setBounds(100,75,500,100);
 		add(lNewUser);
 		
 		JLabel lUser = new JLabel("Usuario");
